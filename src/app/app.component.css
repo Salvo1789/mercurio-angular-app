@@ -1,0 +1,30 @@
+div[ng-view] {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.card {
+    margin: auto;
+    width: 20vw;
+    height: 40vh;
+}
+
+.card:hover {
+    animation: animate 3s 
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0%;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0px);
+    }
+}
